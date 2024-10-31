@@ -2,9 +2,9 @@
 
 /* Estilo global */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #e6f0ff; /* Fundo azul claro */
-    color: #333; /* Texto escuro */
+    font-family: 'Press Start 2P', cursive; /* Fonte pixelada para estilo arcade */
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #e0e7ff; /* Texto azul claro */
     margin: 0;
     padding: 0;
 }
@@ -15,6 +15,7 @@ header {
     color: #fff; /* Texto branco */
     padding: 20px;
     text-align: center;
+    border-bottom: 5px solid #007bff; /* Azul brilhante */
 }
 
 nav ul {
@@ -30,31 +31,42 @@ nav ul li {
 nav ul li a {
     color: #fff; /* Texto branco */
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-/* Estilo do container principal */
-.card-container, .benefits-container {
-    max-width: 800px;
-    margin: 20px auto;
+nav ul li a:hover {
+    color: #007bff; /* Azul brilhante ao passar o mouse */
+}
+
+/* Estilo do conteúdo principal */
+.card-container {
     padding: 20px;
-    background-color: #ffffff; /* Fundo branco */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Estilo dos cards */
 .card {
-    background-color: #f0f4f8; /* Cinza claro */
-    border: 1px solid #ced4da; /* Borda cinza */
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: #2a2a2a; /* Cinza escuro */
+    border: 2px solid #007bff; /* Azul brilhante */
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-    background-color: #cce5ff; /* Azul claro ao passar o mouse */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); /* Sombra azul ao passar o mouse */
+}
+
+.card h3 {
+    color: #007bff; /* Azul brilhante para os títulos */
+}
+
+.card p {
+    color: #e0e7ff; /* Texto azul claro */
 }
 
 /* Estilo do rodapé */
@@ -68,11 +80,18 @@ footer {
     width: 100%;
 }
 
-/* Estilo dos títulos */
-h1, h2 {
-    color: #0056b3; /* Azul mais escuro */
+/* Estilo para o vídeo */
+iframe {
+    margin: 20px 0;
+    border: 2px solid #007bff; /* Azul brilhante */
+    border-radius: 10px;
 }
 
-.intro-text {
-    color: #555; /* Cinza escuro para texto introdutório */
+/* Estilo para a imagem */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #007bff; /* Azul brilhante */
+    border-radius: 10px;
+    margin: 20px 0;
 }
