@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6f0ff; /* Fundo azul claro */
+    color: #333; /* Texto escuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #003366; /* Azul escuro */
+    color: #fff; /* Texto branco */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* Texto branco */
+    text-decoration: none;
+}
+
+/* Estilo do container principal */
+.card-container, .benefits-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos cards */
+.card {
+    background-color: #f0f4f8; /* Cinza claro */
+    border: 1px solid #ced4da; /* Borda cinza */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #cce5ff; /* Azul claro ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    background-color: #003366; /* Azul escuro */
+    color: #fff; /* Texto branco */
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo dos títulos */
+h1, h2 {
+    color: #0056b3; /* Azul mais escuro */
+}
+
+.intro-text {
+    color: #555; /* Cinza escuro para texto introdutório */
+}
